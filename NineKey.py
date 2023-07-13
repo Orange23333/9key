@@ -108,11 +108,11 @@ if __name__ == '__main__':
 	# python 9key.py "23 33 42"
 	# python 9key.py "233342"
 
-	__result, __err = main(sys.argv[0])
+	__result, __err = main(sys.argv[1])
 
 	if __err is not None:
 		print("Error: " + __err)
-		os.exit(-1)
+		os._exit(-1)
 
 	print(__result)
 	os._exit(0)
