@@ -9,8 +9,8 @@
 
 ## 其他
 
-* 本代码使用`Python 3.10.4`测试。
+* 本脚本使用`Python 3.10.4`测试。
 
 ---
 
-View this code on [GitHub]().
+View this code on [GitHub](https://github.com/Orange23333/9key).
