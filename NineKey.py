@@ -57,8 +57,8 @@ __nine_key_map = {
 def __check_key(k):
 	return '2' <= k[0] and k[0] <= '9'
 
-def __check_number(n):
-	return '1' <= n[0] and n[0] <= '4'
+#def __check_number(n):
+#	return '1' <= n[0] and n[0] <= '4'
 
 def __query_value(k, n):
 	if k in __nine_key_map.keys():
@@ -86,8 +86,8 @@ def main(cipher_text):
 					return None, 'Error: Unexcept number "' + k + '" at ' + str(i + 1) + ' is alone. Input numbers are not paired.'
 				
 				n = cipher_text[i]
-				if not __check_number(n):
-					return None, 'Error: Unexcept number "' + n + '" of key "' + k + '" at ' + str(i + 1) + '. If key is 7 or 9, it must be a number in 1~4. In other cases, it must be a number in 1~3. (*1)'
+				#if not __check_number(n):
+				#	return None, 'Error: Unexcept number "' + n + '" of key "' + k + '" at ' + str(i + 1) + '. If key is 7 or 9, it must be a number in 1~4. In other cases, it must be a number in 1~3. (*1)'
 				
 				v = __query_value(k, n)
 				if v is None:
